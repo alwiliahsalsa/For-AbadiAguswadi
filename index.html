@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Favorite Person ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <section class="hero">
+            <p class="small-title">a little birthday page made with love ♡</p>
+            <h1>Happy Birthday,<br><span>My Favorite Person Abadi Aguswadi</span> 🎂</h1>
+            <p class="intro">
+                Hari ini bukan cuma tentang bertambahnya usia,
+                tapi tentang merayakan seseorang yang begitu berarti.
+            </p>
+        </section>
+
+        <section class="card image-card">
+            <img src="assets/birthday-cat.jpg" alt="Ilustrasi kucing dengan pita pink">
+        </section>
+
+        <section class="card message-card">
+            <span class="heart">♡</span>
+            <h2>For You, Birthday Boy</h2>
+
+            <p>
+                Happy birthday, sayang! 🤍
+            </p>
+
+            <p>
+                Semoga di usia yang baru ini, semua hal baik datang
+                satu per satu ke hidup kamu. Semoga langkah kamu selalu
+                dimudahkan, impian-impian kamu perlahan menjadi nyata,
+                dan kamu selalu punya alasan untuk tersenyum setiap hari.
+            </p>
+
+            <p>
+                Terima kasih sudah menjadi seseorang yang begitu spesial.
+                Jangan pernah lupa kalau kamu pantas mendapatkan banyak
+                hal baik, banyak kebahagiaan, dan banyak cinta.
+            </p>
+
+            <p>
+                I hope this new chapter of your life is softer, happier,
+                and filled with beautiful little moments.
+                Keep being the wonderful person that you are. 🌷
+            </p>
+
+            <p class="closing">
+                Once again, happy birthday to my favorite boy. ♡
+                <br>
+                Semoga hari ini seindah senyum kamu.
+            </p>
+        </section>
+
+        <section class="card video-card">
+            <p class="section-label">a little something for you 🎀</p>
+            <h2>Birthday Video</h2>
+            <p class="video-note">
+                Aku harap lirik lagu ini bisa jelasin ke ayang tentang perasaan ku untuk ayang.
+            </p>
+
+            <!--
+                GANTI VIDEO_ID dengan ID video YouTube kamu.
+                Contoh link:
+                https://www.youtube.com/watch?v=dQw4w9WgXcQ
+                Maka VIDEO_ID-nya adalah: dQw4w9WgXcQ
+            -->
+            <div class="video-wrapper">
+                <video id="birthdayVideo" controls>
+                <source src="assets/birthday-video.mp4" type="video/mp4">
+                Browser kamu tidak mendukung pemutaran video.
+                </video>
+            </div>
+
+            <script>
+                const video = document.getElementById("birthdayVideo");
+
+                video.addEventListener("loadedmetadata", function () {
+                video.currentTime = 208;
+                });
+            </script>
+        </section>
+
+        <footer>
+            <p>made especially for you ♡</p>
+            <p class="footer-small">Abadi Aguswadi</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
